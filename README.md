@@ -2,6 +2,7 @@
 
 ```
 mkdir omnetpp-workspace && cd omnetpp-workspace
+git clone git@github.com:diegopso/omnet-singularity-sample.git .
 singularity build omnetpp.sif omnetpp.def
 singularity shell omnetpp.sif
 chmod +x install.sh
