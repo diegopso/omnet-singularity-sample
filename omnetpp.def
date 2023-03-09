@@ -1,12 +1,7 @@
 Bootstrap: docker
 From: ubuntu:20.04
 
-# singularity build omnetpp.sif omnetpp.def
-# singularity shell omnetpp.sif
-# ./install.sh
-
-%post # include commands that will be executed 
-/bin/bash <<EOF
+%post
     apt-get update 
 
     ln -fs /usr/share/zoneinfo/Europe/Zurich /etc/localtime
@@ -14,4 +9,3 @@ From: ubuntu:20.04
 
     apt-get install -y curl build-essential clang lld gdb bison flex perl python3 python3-pip libxml2-dev zlib1g-dev xdg-utils
     python3 -m pip install --upgrade pip
-EOF
