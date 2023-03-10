@@ -1,5 +1,7 @@
 # Run Omnet++ using Singularity
 
+## Local Experiment
+
 Simple example with Aloha experiment:
 
 ```
@@ -18,3 +20,15 @@ Alterntivelly using the `singularity run` command, after executing the `./instal
 ```
 singularity run omnetpp.sif
 ```
+
+## Submitting to HPC nodes
+
+To submit a single task to HPC use the `submit.sh` file. Update the SBATCH configs at the begining of the file, such as the reporting email, and run:
+
+```
+sbatch submit.sh
+```
+
+## TODO
+
+- Adjust `submit.sh` to submit multiple jobs using SLURM arrays.
