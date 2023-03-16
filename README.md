@@ -1,5 +1,7 @@
 # Run Omnet++ using Singularity
 
+Sample repository developed to run experiments on Omnet++ using SLURM. Testes performed on [UBELIX](http://www.id.unibe.ch/hpc), the HPC cluster at the University of Bern.
+
 ## Local Experiment
 
 Simple example with Aloha experiment:
